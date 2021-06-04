@@ -112,6 +112,7 @@ const UICtrl = (function () {
     },
     addTableDataProduk: function (item) {
       const tr = document.createElement('tr');
+      // Ini yang di tambahkan
       tr.setAttribute("id", `item-${item.id}`);
       tr.innerHTML =
         `
@@ -148,6 +149,8 @@ const UICtrl = (function () {
     },
     updatelisttableDataProduk: function (item) {
       let listtableDataProduk = document.querySelectorAll(UISelector.listtableDataProduk)
+
+      // Bagian dissini yang di tambahkan
       listtableDataProduk.forEach(listtableDataProduks => {
         const itemID = listtableDataProduks.getAttribute('id');
         console.log(itemID);
